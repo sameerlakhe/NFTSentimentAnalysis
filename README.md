@@ -1,8 +1,11 @@
 # NFTSentimentAnalysis
-Apply natural language processing to understand the sentiment in the latest news articles featuring NFTs. Apply fundamental NLP techniques to better understand the other factors involved with the coin prices such as common words and phrases and organizations and entities mentioned in the articles
+This project aims to analyze sentiments for a particular NFT collection and determine its correlation with price action.
+An attemp was made to train a machine learning model (RNN LSTM) based on twitter data classified using Vader SentimentIntensityAnalyser.
+However, due to the nature of the tweet data and most probably lack of data cleanup, the model was not identifying true positives correcly on the test data
+
 
 ***The following approach was followed to generate sentiment analysis for an NFT collection and check its correlation to price action***
-- Get twitter data for 1 week from Twitter using Tweepy API
+- Get twitter data for 1 week from Twitter using Tweepy API based on a query for an NFT collection i.e Boared APE Yatch Club (BAYC)
 - Sanitize the data to remove emojis, special characters, mentions, hyperlinks
 - User Vader SentimentIntensityAnalyser to get the sentiment of tweets 
 - Classify the sentiment as positive/non-positive based on compound score >0.1
@@ -15,7 +18,7 @@ Apply natural language processing to understand the sentiment in the latest news
 pip install tweepy
 
 
-***BAYC NFT Sample***
+***BAYC (Boared APE Yatch Club) NFT Sample***
 ![BAYC.png](Images/BAYC_pics.png)
 
 ***World Cloud to indicate most common words in Tweets related to BAYC***
