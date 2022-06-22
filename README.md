@@ -55,9 +55,14 @@ pip install tweepy
 ![HeatMap.png](Images/HeatMap.png)
 
 ## Findings
+* The correlation we found was not clear/strong
+* Our Hypothesis was that there would be a positive sentiment as prices went up. (And vice versa)
+* But what we found is that we had insufficient data to determine any correlation.
+* There are many different ways to approach this task, but they require time to test and validate the results and see what works and what doesn’t - that probably would require more than two weeks. The good news is that we were able to see the full process required to get the API key, see all the options available, pull the data, run the model, and understand the pros and cons of different types of tweets. For example the approach of using hashtags (#NFT, #BAYC) can be one of the purest ways to gather people’s sentiment, but there is significant effort required to clean up the data, whereas we could use specialized publications with language that is more polished, similar to what we used in class, but with a potentially distorted view of client sentiment in real time, which in the end is what we are trying to understand.
+This does not mean that the RNN LSTM model was not good, but it was probably not the best approach for us considering the time and resources available, but with some extra time the model could have been a good choice.
 
 ## Recommendations Going Forward
-In order to continue improving this tool, we could explore other methods above and beyond what we’ve already used, for example 
+In order to continue improving this tool, we could explore other methods above and beyond what we’ve already used, for example: 
 * Use ngrams to read sentiment via sequencing of words.
 * Invest time cleaning up and classifying twits manually, the challenge with this is that its could be very time consuming to go through thousands of twits, and we would need to be very careful to make sure our personal biases do not affect the results of the classification exercise
 * Take NFT pricing to another level and use Machine Learning to try to predict future valuations of NFT collections, in combination with Sentiment analysis to reach a more reliable future valuation. Machine learning models could be particularly helpful here considering that many NFT collections don’t have a lot price history.
