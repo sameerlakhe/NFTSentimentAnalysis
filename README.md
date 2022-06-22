@@ -1,7 +1,11 @@
 # NFTSentimentAnalysis
+
+## Background 
 This project aims to analyze sentiments for a particular NFT collection and determine its correlation with price action.
 An attemp was made to train a machine learning model (RNN LSTM) based on twitter data classified using Vader SentimentIntensityAnalyser.
 However, due to the nature of the tweet data and most probably lack of data cleanup, the model was not identifying true positives correcly on the test data
+
+This project generated real time sentiment analysis from Twits to determine the correlation with the closing price of the NFT Bored Ape Yatch Club collection over a one week period using Open Sea’s API key.
 
 
 ***The following approach was followed to generate sentiment analysis for an NFT collection and check its correlation to price action***
@@ -14,10 +18,15 @@ However, due to the nature of the tweet data and most probably lack of data clea
 - The price for the collection for 1 week was then fetched from OpenSea using API provided by OpenSea
 - The sentiment and proce for the 1 week period were then plotted to identify correlation between the two
 
+## Technology
+* Twitter API Key
+* Open Sea API Key 
+
+## Installations
 ***This project uses the library tweepy to get the data from twitter***
 pip install tweepy
 
-
+## Example 
 ***BAYC (Boared APE Yatch Club) NFT Sample***
 ![BAYC.png](Images/BAYC_pics.png)
 
@@ -42,4 +51,8 @@ pip install tweepy
 
 ***HeatMap to indicate correlation between Sentiment and Price for a 1 week period***
 ![HeatMap.png](Images/HeatMap.png)
+
+## Findings
+
+## Recommendations Going Forward
 
