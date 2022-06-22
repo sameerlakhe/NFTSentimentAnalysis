@@ -18,14 +18,9 @@ This project generated real time sentiment analysis from Twits to determine the 
 - The price for the collection for 1 week was then fetched from OpenSea using API provided by OpenSea
 - The sentiment and proce for the 1 week period were then plotted to identify correlation between the two
 
-## Technology
-* Twitter API Key
-* Open Sea API Key 
-
-## Resources
-
 ## Installations
-***This project uses the library tweepy to get the data from twitter***
+**This project uses the library tweepy to get the data from twitter**
+
 pip install tweepy
 
 ## Usage Examples 
