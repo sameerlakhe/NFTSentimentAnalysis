@@ -2,13 +2,13 @@
 
 ## Background 
 This project aims to analyze sentiments for a particular NFT collection and determine its correlation with price action.
-An attemp was made to train a machine learning model (RNN LSTM) based on twitter data classified using Vader SentimentIntensityAnalyser.
-However, due to the nature of the tweet data and most probably lack of data cleanup, the model was not identifying true positives correcly on the test data
+An attempt was made to train a machine learning model (RNN LSTM) based on twitter data classified using Vader Sentiment Intensity Analyzer.
+However, due to the nature of the tweet data and most probably lack of data cleanup, the model was not identifying true positives correcly on the test data.
 
-This project generated real time sentiment analysis from Twits to determine the correlation with the closing price of the NFT Bored Ape Yatch Club collection over a one week period using Open Sea’s API key.
+This project generated real time sentiment analysis from Twits to determine the correlation with the closing price of the NFT Bored Ape Yatch Club collection over a one week period.
 
 
-***The following approach was followed to generate sentiment analysis for an NFT collection and check its correlation to price action***
+**The following approach was followed to generate sentiment analysis for an NFT collection and check its correlation to price action.**
 - Get twitter data for 1 week from Twitter using Tweepy API based on a query for an NFT collection i.e Boared APE Yatch Club (BAYC)
 - Sanitize the data to remove emojis, special characters, mentions, hyperlinks
 - User Vader SentimentIntensityAnalyser to get the sentiment of tweets 
@@ -22,11 +22,13 @@ This project generated real time sentiment analysis from Twits to determine the 
 * Twitter API Key
 * Open Sea API Key 
 
+## Resources
+
 ## Installations
 ***This project uses the library tweepy to get the data from twitter***
 pip install tweepy
 
-## Example 
+## Usage Examples 
 ***BAYC (Boared APE Yatch Club) NFT Sample***
 ![BAYC.png](Images/BAYC_pics.png)
 
@@ -55,4 +57,22 @@ pip install tweepy
 ## Findings
 
 ## Recommendations Going Forward
+In order to continue improving this tool, we could explore other methods above and beyond what we’ve already used, for example 
+* Use ngrams to read sentiment via sequencing of words.
+* Invest time cleaning up and classifying twits manually, the challenge with this is that its could be very time consuming to go through thousands of twits, and we would need to be very careful to make sure our personal biases do not affect the results of the classification exercise
+* Take NFT pricing to another level and use Machine Learning to try to predict future valuations of NFT collections, in combination with Sentiment analysis to reach a more reliable future valuation. Machine learning models could be particularly helpful here considering that many NFT collections don’t have a lot price history.
+* Incorporate additional data sources to our analysis to make it more accurate and complete: for example adding Discord, Articles, or curating a list of hashtags, NFT publications , and key influencers to try to present a balanced view of NFT sentiment.
+* We used one week of data for this test, but next steps for us would include expanding our time horizon to cover a longer period of time
+* Finally once we have a solid model that we feel is more accurate, we would replicate it to other collections beyond BAYC. (Doodles, Mutant Ape Yatch club, Crypto punks , etc)
+
+## Contributors
+Chantal Garnett
+
+Sameer Lakhe
+
+Emiliano Mendez
+
+Marcus Policicchio 
+
+
 
