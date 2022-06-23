@@ -1,4 +1,6 @@
 # NFTSentimentAnalysis
+![image](https://user-images.githubusercontent.com/99493522/175188661-c31a3581-285c-4bb3-99b8-f3472c0b6ec7.png)
+
 
 ## Background 
 This project aims to analyze sentiments for a particular NFT collection and determine its correlation with price action.
@@ -57,8 +59,8 @@ pip install tweepy
 * The approach of using hashtags (#NFT, #BAYC) can be one of the purest ways to gather people’s sentiment, but there is significant effort required to clean up the data, whereas specialized publications with language that is more polished could have been used, similar to what was used in class, but with a potentially distorted view of client sentiment in real time, which in the end is what we were trying to understand.
 * This does not mean that the RNN LSTM model was not good, but it was probably not the best approach for this project considering the time and resources available, however with futher exploration the model could be a good choice.
 
-## Recommendations Going Forward
-** In order to continue improving this tool, we could explore other methods, for example: **
+## Recommendations
+**In order to continue improving this tool, we could explore other methods, for example:**
 * Use ngrams to read sentiment via sequencing of words.
 * Clean up and classifying tweets manually, the challenge with this is that its could be very time consuming to go through thousands of tweets, and we would need to be  cautious to make sure our personal biases do not affect the results of the classification exercise.
 * Take NFT pricing to another level and use Machine Learning to try to predict future valuations of NFT collections, in combination with Sentiment analysis to reach a more reliable future valuation. Machine learning models could be particularly helpful here considering that many NFT collections don’t have a lot price history.
