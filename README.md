@@ -62,7 +62,7 @@ pip install tweepy
 ## Recommendations
 **In order to continue improving this tool, we could explore other methods, for example:**
 * Use ngrams to read sentiment via sequencing of words.
-* Clean up and classifying tweets manually, the challenge with this is that its could be very time consuming to go through thousands of tweets, and we would need to be  cautious to make sure our personal biases do not affect the results of the classification exercise.
+* Clean up and classify tweets manually, the challenge with this is that its could be very time consuming to go through thousands of tweets, and we would need to be  cautious to make sure our personal biases do not affect the results of the classification exercise.
 * Take NFT pricing to another level and use Machine Learning to try to predict future valuations of NFT collections, in combination with Sentiment analysis to reach a more reliable future valuation. Machine learning models could be particularly helpful here considering that many NFT collections don’t have a lot price history.
 * Incorporate additional data sources to our analysis to make it more accurate and complete, for example adding Discord, Articles, or curating a list of hashtags, NFT publications , and key influencers to try to present a balanced view of NFT sentiment.
 * Use a longer period of time, months or years. 
