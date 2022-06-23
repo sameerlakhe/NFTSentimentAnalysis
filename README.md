@@ -1,4 +1,4 @@
-# NFTSentimentAnalysis
+# NFT Sentiment Analysis
 ![image](https://user-images.githubusercontent.com/99493522/175188661-c31a3581-285c-4bb3-99b8-f3472c0b6ec7.png)
 
 
